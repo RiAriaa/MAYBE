@@ -1,0 +1,250 @@
+/* General Styles */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Navbar Styles */
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.w3-top {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.w3-bar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Background Video */
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind other elements */
+}
+
+/* Full-height Image Header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    position: relative;
+}
+
+/* Sidebar Styles */
+.w3-sidebar {
+    display: none;
+}
+
+.w3-sidebar .w3-bar-item {
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+/* Rating System */
+.rating {
+    display: flex;
+    flex-direction: row; /* Default order: left to right */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating span {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Hover Effect: Right to Left */
+.rating span:hover,
+.rating span:hover ~ span {
+    color: #ccc; /* Reset stars to the right of hovered star */
+}
+
+.rating span:hover ~ .star {
+    color: #f0ad4e; /* Highlight stars to the left of hovered star */
+}
+
+/* Active Effect: Right to Left */
+.rating span.active,
+.rating span ~ .active {
+    color: #f0ad4e; /* Keep active stars highlighted */
+}
+
+
+
+/* Promo Section */
+.w3-container {
+    padding: 64px 16px;
+}
+
+.w3-light-grey {
+    background-color: #f1f1f1;
+}
+
+.w3-dark-grey {
+    background-color: #757575;
+    color: white;
+}
+
+.w3-padding-64 {
+    padding: 64px 16px;
+}
+
+.w3-padding-128 {
+    padding: 128px 16px;
+}
+
+/* Team Cards */
+.w3-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 16px 0;
+}
+
+.w3-card img {
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+}
+
+.w3-card .w3-container {
+    padding: 16px;
+}
+
+/* Pricing Section */
+.w3-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.w3-ul li {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.w3-ul li:last-child {
+    border: none;
+}
+
+.w3-ul .w3-black,
+.w3-ul .w3-red {
+    color: white;
+}
+
+/* Contact Section */
+.w3-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.w3-button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.w3-button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 64px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .w3-xlarge i {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+footer .w3-xlarge i:hover {
+    opacity: 0.7;
+}
+
+/* Modal Image Gallery */
+.w3-modal {
+    display: none;
+    padding-top: 40px;
+}
+
+.w3-modal img {
+    max-width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.w3-modal .w3-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Skills Section */
+.w3-wide {
+    margin-top: 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.w3-grey {
+    background-color: #f1f1f1;
+}
+
+.w3-dark-grey {
+    background-color: #4caf50;
+}
+
+.w3-container .w3-dark-grey {
+    color: white;
+    text-align: center;
+}
+
+/* Work Section */
+.w3-hover-opacity:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .w3-bar .w3-bar-item {
+        display: block;
+        width: 100%;
+    }
+
+    .w3-col {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
